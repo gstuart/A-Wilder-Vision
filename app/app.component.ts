@@ -4,11 +4,11 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <div class="container">
-      <h1>A Wilder Vision</h1>
+      <h1>{{currentFocus}}</h1>
     </div>
   `
 })
 
 export class AppComponent {
-
+  currentFocus: String = 'A Wilder Vision';
 }
