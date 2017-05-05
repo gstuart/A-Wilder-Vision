@@ -26,8 +26,8 @@ import { Animal }    from './animal.model';
           <strong>Likes: </strong>{{currentAnimal.likes}} <br>
           <strong>Dislikes: </strong>{{currentAnimal.dislikes}} <br>
 
-          <input *ngIf="currentAnimal.age <= 2"/>
-          <input *ngIf="currentAnimal.age >= 3"/>
+          <input *ngIf="young"/>
+          <input *ngIf="old"/>
 
           <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal</button>
         </p>
