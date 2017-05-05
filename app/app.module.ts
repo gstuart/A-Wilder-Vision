@@ -10,7 +10,7 @@ import { AgePipe }             from './age.pipe';
 @NgModule({
   imports: [ BrowserModule,
                   FormsModule ],
-  declarations: [ AppComponent, AnimalComponent, AnimalEditComponent, NewAnimalComponent ],
+  declarations: [ AppComponent, AnimalListComponent, AnimalEditComponent, NewAnimalComponent, AgePipe ],
   bootstrap:    [ AppComponent ]
 })
 

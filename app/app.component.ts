@@ -36,4 +36,5 @@ export class AppComponent {
   finishedEditing() {
     this.selectedAnimal = null;
   }
+
 }
