@@ -9,7 +9,7 @@ import { Animal }    from './animal.model';
       <div class="well">
         <select (change)="onChange($event.target.value)">
           <option value="allAnimals" selected="selected">All Animals</option>
-          <option value="youngAnimals">Under 2 years of age</option>
+          <option value="youngAnimals">2 years of age and under</option>
           <option value="oldAnimals">Over 2 years of age</option>
         </select>
       </div>
