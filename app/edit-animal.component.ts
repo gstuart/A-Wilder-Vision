@@ -16,7 +16,7 @@ import { Animal } from './animal.model';
             <input [(ngModel)]="childSelectedAnimal.age" name="age" id="age" type="text">
           <label for="diet">Diet</label>
             <select [(ngModel)]="childSelectedAnimal.diet" name="diet" id="diet">
-                <option>Carnivor</option>
+                <option>Carnivore</option>
                 <option>Detritivore</option>
                 <option>Geophagy</option>
                 <option>Herbivore</option>
