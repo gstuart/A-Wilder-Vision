@@ -5,18 +5,20 @@ import { Animal }    from './animal.model';
   selector: 'animal-list',
   template: `
     <div class="container">
-
       <div class="well">
-        <select (change)="onChange($event.target.value)">
-          <option value="allAnimals" selected="selected">All Animals</option>
-          <option value="youngAnimals">2 years of age and under</option>
-          <option value="oldAnimals">Over 2 years of age</option>
-        </select>
+        <fieldset>
+          <label for="view">Select View</label>
+            <select (change)="onChange($event.target.value)" id="age">
+              <option value="allAnimals" selected="selected">All Animals</option>
+              <option value="youngAnimals">2 years of age and under</option>
+              <option value="oldAnimals">Over 2 years of age</option>
+            </select>
+        </fieldset>
       </div>
       <div class="well">
         <p [class]="ageIndicator(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
           <br>
-          
+
           <strong>Species:</strong> {{currentAnimal.species}} <br>
           <strong>Name:</strong> {{currentAnimal.name}} <br>
           <strong>Age: </strong> {{currentAnimal.age}} <br>
