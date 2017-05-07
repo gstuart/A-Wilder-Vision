@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'edit-animal',
   template: `
-    <div >
+    <div>
       <form class="pure-form pure-form-stacked" id="editForm">
       <fieldset *ngIf="childSelectedAnimal">
           <legend>Edit Animal</legend>

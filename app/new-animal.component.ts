@@ -4,9 +4,9 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'new-animal',
   template:`
-    <button (click)="newButtonHasBeenClicked()" type="submit" class="pure-button pure-button-primary" id="newButton" data-toggle="modal" data-target="#myModal">New Animal</button>
+    <button (click)="newButtonHasBeenClicked()" type="submit" class="pure-button pure-button-primary" id="newButton" data-toggle="modal" data-target="#newModal">New Animal</button>
     <br>
-    <div id="myModal" class="modal fade" role="dialog">
+    <div id="newModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
