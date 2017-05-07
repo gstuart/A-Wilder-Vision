@@ -1,12 +1,6 @@
-#pageTitle {
-  font-family: 'Bigelow Rules', cursive;
-  font-size: 100px;
-}
-
 #animalList {
-  padding: 40px;
-  font-family: 'Crete Round', serif;
-  font-size: 20px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 #editForm {
@@ -19,4 +13,14 @@
 
 #newAnimalForm {
   font-family: 'Crete Round', serif;
+}
+
+.well {
+  background-color: #AE85C4;
+}
+
+img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

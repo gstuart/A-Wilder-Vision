@@ -5,7 +5,7 @@ import { Animal } from './animal.model';
   selector: 'app-root',
   template: `
     <div class="container">
-      <h1 id="pageTitle">{{currentFocus}}</h1>
+      <h1 id="pageTitle"><img src="./resources/img/common/banner.jpg" alt="Banner Image"/></h1>
       <p>
         <animal-list [childAnimalList]="masterAnimalList"(clickSender)="editAnimal($event)"></animal-list>
       </p>
@@ -18,7 +18,6 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
   selectedAnimal = null;
-  currentFocus: String = 'A Wilder Vision';
 
   masterAnimalList: Animal[] = [
     new Animal('Arctic Fox', 'Moon', 2, 'Carnivore', 'Northern Frontier', 3, 'Female', 'Cool shade', 'Loud noises'),
