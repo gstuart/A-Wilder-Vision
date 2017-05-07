@@ -6,24 +6,25 @@ import { Animal } from './animal.model';
   template:`
     <button (click)="newButtonHasBeenClicked()" type="submit" class="pure-button pure-button-primary">New Animal</button>
     <br>
+    <div *ngIf="newAnimal">
     <form class="pure-form pure-form-stacked">
-    <fieldset *ngIf="newAnimal">
+    <fieldset>
         <legend>Add New Animal</legend>
         <label for="species">Species</label>
-          <input #newSpecies id="species" type="species">
+          <input #newSpecies id="species" type="text">
         <label for="name">Name</label>
-          <input #newName id="name" type="name">
+          <input #newName id="name" type="text">
         <label for="age">Age</label>
-          <input #newAge id="age" type="age">
+          <input #newAge id="age" type="text">
         <label for="diet">Diet</label>
           <select #newDiet id="diet">
-              <option>Carnivor</option>
-              <option>Herbivore</option>
-              <option>Omnivore</option>
-              <option>Scavenger</option>
-              <option>Detritivore</option>
-              <option>Geophagy</option>
-              <option>Saprophagy</option>
+            <option>Carnivor</option>
+            <option>Detritivore</option>
+            <option>Geophagy</option>
+            <option>Herbivore</option>
+            <option>Omnivore</option>
+            <option>Saprophagy</option>
+            <option>Scavenger</option>
           </select>
         <label for="location">Location</label>
           <select #newLocation id="location">
@@ -52,15 +53,14 @@ import { Animal } from './animal.model';
               <option>Unknown</option>
           </select>
         <label for="likes">Likes</label>
-          <input #newLikes id="likes" type="likes">
+          <input #newLikes id="likes" type="text">
         <label for="dislikes">Dislikes</label>
-          <input #newDislikes id="dislikes" type="dislikes">
+          <input #newDislikes id="dislikes" type="text">
 
         <button type="submit" class="pure-button pure-button-primary" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCartakers.value, newGender.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCartakers.value=''; newGender.value=''; newLikes.value=''; newDislikes.value='';">Add Animal</button>
       </fieldset>
     </form>
-    <div>
-      <button (click)="doneButtonClicked()" type="submit" class="pure-button pure-button-primary">Done</button>
+    <button (click)="doneButtonClicked()" class="pure-button pure-button-primary">Done Adding Animals</button>
     </div>
   `
 })
