@@ -26,6 +26,7 @@ import { Animal } from './animal.model';
       <label>Animal Dislikes:</label>
         <input #newDislikes>
       <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCartakers.value, newGender.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCartakers.value=''; newGender.value=''; newLikes.value=''; newDislikes.value='';">Save</button>
+      <button (click)="doneButtonClicked()">Done</button>
     </div>
   `
 })
@@ -44,4 +45,9 @@ export class NewAnimalComponent{
   newButtonHasBeenClicked(){
     this.newAnimal = true;
   }
+
+  doneButtonClicked(){
+    this.newAnimalForm = null;
+  }
+
 }
