@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'new-animal',
   template:`
-    <button (click)="newButtonHasBeenClicked()">New Animal</button>
+    <button (click)="newButtonHasBeenClicked()" type="submit" class="pure-button pure-button-primary">New Animal</button>
     <br>
     <form class="pure-form pure-form-stacked">
     <fieldset *ngIf="newAnimal">
@@ -60,7 +60,7 @@ import { Animal } from './animal.model';
       </fieldset>
     </form>
     <div>
-      <button (click)="doneButtonClicked()">Done</button>
+      <button (click)="doneButtonClicked()" type="submit" class="pure-button pure-button-primary">Done</button>
     </div>
   `
 })

@@ -5,7 +5,7 @@ import { Animal }    from './animal.model';
   selector: 'animal-list',
   template: `
     <div class="container">
-    
+
       <div class="well">
         <select (change)="onChange($event.target.value)">
           <option value="allAnimals" selected="selected">All Animals</option>
@@ -29,7 +29,7 @@ import { Animal }    from './animal.model';
           <input *ngIf="young"/>
           <input *ngIf="old"/>
 
-          <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal</button>
+          <button (click)="editButtonHasBeenClicked(currentAnimal)" type="submit" class="pure-button pure-button-primary">Edit Animal</button>
         </p>
       </div>
     </div>
