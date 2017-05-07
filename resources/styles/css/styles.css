@@ -1,0 +1,26 @@
+#animalList {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#editForm {
+  font-family: 'Crete Round', serif;
+}
+
+#newButton {
+  font-family: 'Crete Round', serif;
+}
+
+#newAnimalForm {
+  font-family: 'Crete Round', serif;
+}
+
+.well {
+  background-color: #AE85C4;
+}
+
+img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
