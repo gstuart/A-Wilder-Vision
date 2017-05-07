@@ -17,6 +17,7 @@ import { Animal } from './animal.model';
 })
 
 export class AppComponent {
+  selectedAnimal = null;
   currentFocus: String = 'A Wilder Vision';
 
   masterAnimalList: Animal[] = [
