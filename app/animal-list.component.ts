@@ -15,25 +15,25 @@ import { Animal }    from './animal.model';
             </select>
         </fieldset>
       </div>
-      <div class="well">
-        <p [class]="ageIndicator(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
-          <br>
-
-          <strong>Species:</strong> {{currentAnimal.species}} <br>
-          <strong>Name:</strong> {{currentAnimal.name}} <br>
-          <strong>Age: </strong> {{currentAnimal.age}} <br>
-          <strong>Diet: </strong> {{currentAnimal.diet}} <br>
-          <strong>Location: </strong> {{currentAnimal.location}} <br>
-          <strong># of Caretakers needed: </strong>{{currentAnimal.caretakers}}<br>
-          <strong>Gender: </strong>{{currentAnimal.gender}} <br>
-          <strong>Likes: </strong>{{currentAnimal.likes}} <br>
-          <strong>Dislikes: </strong>{{currentAnimal.dislikes}} <br>
-
-          <input *ngIf="young"/>
-          <input *ngIf="old"/>
-
-          <button (click)="editButtonHasBeenClicked(currentAnimal)" type="submit" class="pure-button pure-button-primary">Edit Animal</button>
-        </p>
+      <div class="pure-g">
+          <div class="pure-u-1-1">
+            <p [class]="ageIndicator(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
+              <br>
+              <strong>Species:</strong> {{currentAnimal.species}} <br>
+              <strong>Name:</strong> {{currentAnimal.name}} <br>
+              <strong>Age: </strong> {{currentAnimal.age}} <br>
+              <strong>Diet: </strong> {{currentAnimal.diet}} <br>
+              <strong>Location: </strong> {{currentAnimal.location}} <br>
+              <strong># of Caretakers needed: </strong>{{currentAnimal.caretakers}}<br>
+              <strong>Gender: </strong>{{currentAnimal.gender}} <br>
+              <strong>Likes: </strong>{{currentAnimal.likes}} <br>
+              <strong>Dislikes: </strong>{{currentAnimal.dislikes}} <br>
+              <input *ngIf="young"/>
+              <input *ngIf="old"/>
+              <br>
+              <button (click)="editButtonHasBeenClicked(currentAnimal)" type="submit" class="pure-button pure-button-primary">Edit Animal</button>
+            </p>
+          </div>
       </div>
     </div>
   `
