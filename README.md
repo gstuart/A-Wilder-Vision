@@ -65,7 +65,7 @@ With the above items installed you may now do the following in your terminal:
   * new-animal.component for creating a new animal object.
   * edit-animal for editing an existing animals.
 
-   ![planning image](./resources/images/planning.jpg)  
+   ![planning image](./resources/img/common/planning.jpg)  
 
 
 3. UX/UI

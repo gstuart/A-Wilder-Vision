@@ -1,0 +1,22 @@
+#pageTitle {
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 100px;
+}
+
+#animalList {
+  padding: 40px;
+  font-family: 'Crete Round', serif;
+  font-size: 20px;
+}
+
+#editForm {
+  font-family: 'Crete Round', serif;
+}
+
+#newButton {
+  font-family: 'Crete Round', serif;
+}
+
+#newAnimalForm {
+  font-family: 'Crete Round', serif;
+}

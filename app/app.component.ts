@@ -5,7 +5,7 @@ import { Animal } from './animal.model';
   selector: 'app-root',
   template: `
     <div class="container">
-      <h1>{{currentFocus}}</h1>
+      <h1 id="pageTitle">{{currentFocus}}</h1>
       <p>
         <animal-list [childAnimalList]="masterAnimalList"(clickSender)="editAnimal($event)"></animal-list>
       </p>

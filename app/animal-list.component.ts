@@ -17,7 +17,7 @@ import { Animal }    from './animal.model';
       </div>
       <div class="pure-g">
           <div class="pure-u-1-1">
-            <p [class]="ageIndicator(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
+            <p [class]="ageIndicator(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge" id="animalList">
               <br>
               <strong>Species:</strong> {{currentAnimal.species}} <br>
               <strong>Name:</strong> {{currentAnimal.name}} <br>
