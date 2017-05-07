@@ -33,12 +33,13 @@ import { Animal } from './animal.model';
 export class NewAnimalComponent{
   @Output() newAnimalSender = new EventEmitter();
 
+  newAnimal = null;
+  newAnimalForm = null;
+
   submitForm(species: string, name: string, age: number, diet: string, location: string, caretakers: number, gender: string, likes: string, dislikes: string){
     var newAnimalToAdd: Animal = new Animal(species, name, age, diet, location, caretakers, gender, likes, dislikes);
     this.newAnimalSender.emit(newAnimalToAdd);
   }
-
-  newAnimal = null;
 
   newButtonHasBeenClicked(){
     this.newAnimal = true;
