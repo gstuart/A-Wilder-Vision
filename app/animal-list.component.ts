@@ -5,7 +5,7 @@ import { Animal }    from './animal.model';
   selector: 'animal-list',
   template: `
     <div class="container">
-      <h1>{{currentFocus}}</h1>
+    
       <div class="well">
         <select (change)="onChange($event.target.value)">
           <option value="allAnimals" selected="selected">All Animals</option>
