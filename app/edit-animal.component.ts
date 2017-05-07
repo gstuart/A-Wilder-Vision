@@ -8,23 +8,23 @@ import { Animal } from './animal.model';
       <div *ngIf="childSelectedAnimal">
         <h3>Edit Animal</h3>
         <label>Enter Animal Species:</label>
-          <input #newSpecies>
+          <input [(ngModel)]="childSelectedAnimal.species">
         <label>Animal Name:</label>
-          <input #newName>
+          <input [(ngModel)]="childSelectedAnimal.name">
         <label>Animal Age:</label>
-          <input #newAge>
+          <input [(ngModel)]="childSelectedAnimal.age">
         <label>Animal Diet</label>
-          <input #newDiet>
+          <input [(ngModel)]="childSelectedAnimal.diet">
         <label>Animal Location:</label>
-          <input #newLocation>
+          <input [(ngModel)]="childSelectedAnimal.location">
         <label>Number of Cartakers Needed:</label>
-          <input #newCartakers>
+          <input [(ngModel)]="childSelectedAnimal.caretakers">
         <label>Animal Gender:</label>
-          <input #newGender>
+          <input [(ngModel)]="childSelectedAnimal.gender">
         <label>Animal Likes:</label>
-          <input #newLikes>
+          <input [(ngModel)]="childSelectedAnimal.likes">
         <label>Animal Dislikes:</label>
-          <input #newDislikes>    
+          <input [(ngModel)]="childSelectedAnimal.dislikes">
         <br>
         <button (click)="doneButtonClicked()">Done</button>
       </div>

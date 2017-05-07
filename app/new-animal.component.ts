@@ -47,7 +47,7 @@ export class NewAnimalComponent{
   }
 
   doneButtonClicked(){
-    this.newAnimalForm = null;
+    this.newAnimal= null;
   }
 
 }
