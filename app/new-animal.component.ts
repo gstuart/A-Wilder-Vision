@@ -54,9 +54,9 @@ import { Animal } from './animal.model';
                   </select>
                 <label for="gender">Gender</label>
                   <select #newGender id="gender">
-                      <option>Male</option>
-                      <option>Female</option>
                       <option>Unknown</option>
+                      <option>Female</option>
+                      <option>Male</option>
                   </select>
                 <label for="likes">Likes</label>
                   <input #newLikes id="likes" type="text">

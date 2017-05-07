@@ -46,9 +46,9 @@ import { Animal } from './animal.model';
             </select>
           <label for="gender">Gender</label>
             <select [(ngModel)]="childSelectedAnimal.gender" name="gender" id="gender">
-                <option>Male</option>
-                <option>Female</option>
-                <option>Unknown</option>
+              <option>Unknown</option>
+              <option>Female</option>
+              <option>Male</option>
             </select>
           <label for="likes">Likes</label>
             <input [(ngModel)]="childSelectedAnimal.likes" name="likes" id="likes" type="text">
