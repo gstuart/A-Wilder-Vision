@@ -5,7 +5,7 @@
 
 
 ## Short Description
-> Epicodus Javascript Independent Project for Week 3 using Angular, JavaScript, Gulp, NPM, Bootstrap, CSS, and HTML.
+> Epicodus Javascript Independent Project for Week 3 using Angular, JavaScript, Gulp, NPM, Bootstrap, Pure, CSS, and HTML.
 
 ## Table of Contents
 - [Sections](#sections)
