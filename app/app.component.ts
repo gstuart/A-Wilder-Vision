@@ -5,7 +5,7 @@ import { Animal } from './animal.model';
   selector: 'app-root',
   template: `
     <div class="container">
-      <h1 id="pageTitle"><img src="./resources/img/common/banner.jpg" alt="Banner Image"/></h1>
+      <h1 id="pageTitle"><img src="./resources/img/common/banner_image.jpg" alt="Banner Image" width="50%"/></h1>
       <p>
         <animal-list [childAnimalList]="masterAnimalList"(clickSender)="editAnimal($event)"></animal-list>
       </p>
