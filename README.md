@@ -1,4 +1,5 @@
-![Banner Image](https://www.fortworthzoo.org/assets/2059/a_wilder_vision_logo.jpg)
+![Banner Image](<img src="/resources/img/common/banner_image.jpg" alt="Home" width="250">)
+
 # A Wilder Vision
  [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
