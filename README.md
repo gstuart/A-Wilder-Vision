@@ -1,4 +1,4 @@
-![Banner Image](<img src="/resources/img/common/banner_image.jpg" alt="Home" width="250">)
+<img src="/resources/img/common/banner_image.jpg" alt="Home" width="50%">
 
 # A Wilder Vision
  [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
